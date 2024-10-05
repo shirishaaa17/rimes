@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", function() {
                         // Add text only after the button has expanded (after 0.5s)
                         setTimeout(() => {
                             entry.target.classList.add("show-text");
-                        }, 1500); // 500ms to wait for the button expansion
-                    }, 3000);  // 2-second delay after the bounce animation
+                        }, 500); // 500ms to wait for the button expansion
+                    }, 2000);  // 2-second delay after the bounce animation
                 }
                 
                 observer.unobserve(entry.target); 
