@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function() {
                         setTimeout(() => {
                             entry.target.classList.add("show-text");
                         }, 500); // 500ms to wait for the button expansion
-                    }, 2500); 
+                    }, 4500); 
                 }
                 
                 observer.unobserve(entry.target); 
