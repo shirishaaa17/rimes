@@ -1228,6 +1228,7 @@ left:45%;
 }
 
 #contact.animate {
+    animation-delay: 3sec ease-out;
     opacity: 1;
 }
 .footer-section{
