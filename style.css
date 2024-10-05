@@ -1224,8 +1224,8 @@ left:45%;
     border: none;
     opacity: 0;  /* Initially hidden */
     transition: all 0.5s ease-in-out;  /* Smooth animation for width, height, and opacity */
-    text-align: center;
-    color: #E58325; /* Hide text initially */
+
+    color: transparent; /* Hide text initially */
     font-size: 16px;
     line-height: 44.66px;  /* To vertically center text after expansion */
 }
@@ -1238,6 +1238,7 @@ left:45%;
 }
 #contact.animate.show-text {
     color: black;  /* Show text */
+    text-align: center;
     transition: color 0.5s ease;  /* Smooth transition for the text */
 }
 
