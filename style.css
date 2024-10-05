@@ -1217,10 +1217,10 @@ left:45%;
     position: absolute;
     bottom: -22.7px;
     left: 82%;
-    width: 48px;  /* Start as a circle */
-    height: 48px;
+    width: 60px;  /* Start as a circle */
+    height: 60px;
     background-color: #E58325;  /* Orange color */
-    border-radius: 50%;  /* Circular shape */
+    border-radius: 60%;  /* Circular shape */
     border: none;
     opacity: 0;  /* Initially hidden */
     transition: all 0.5s ease-in-out;  /* Smooth animation for width, height, and opacity */
@@ -1234,8 +1234,11 @@ left:45%;
     width: 182px;  /* Expand to button size */
     height: 44.66px;  /* Button height */
     border-radius: 25px;  /* Rounded button corners */
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out, opacity 1s ease-in-out;
+}
+#contact.animate.show-text {
     color: black;  /* Show text */
-    opacity: 1;  /* Make button visible */
+    transition: color 0.5s ease;  /* Smooth transition for the text */
 }
 
 .footer-section{
