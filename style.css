@@ -1211,31 +1211,33 @@ left:45%;
     font-size: 12px;
     text-align: center;
 }
+
+/* Initial state of the #contact button */
 #contact {
     position: absolute;
-    overflow-y: hidden;
     bottom: -22.7px;
     left: 82%;
-    width: 24px; 
+    width: 24px;  /* Start as a circle */
     height: 24px;
-    border-radius: 50%; 
-    background-color: #E58325;
+    background-color: #E58325;  /* Orange color */
+    border-radius: 50%;  /* Circular shape */
+    border: none;
+    opacity: 0;  /* Initially hidden */
+    transition: all 0.5s ease-in-out;  /* Smooth animation for width, height, and opacity */
     text-align: center;
-    opacity: 0; 
-    transition: all 0.8s ease-in-out, opacity 0.5s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    display:none;
+    color: transparent;  /* Hide text initially */
+    font-size: 16px;
+    line-height: 44.66px;  /* To vertically center text after expansion */
 }
+
 #contact.animate {
-    opacity: 1;
-    width: 182px; 
-    height: 44.66px; 
-    border-radius: 25px; 
-    left: 82%; 
+    width: 182px;  /* Expand to button size */
+    height: 44.66px;  /* Button height */
+    border-radius: 25px;  /* Rounded button corners */
+    color: white;  /* Show text */
+    opacity: 1;  /* Make button visible */
 }
+
 .footer-section{
     display: flex;
     flex-direction: column;
