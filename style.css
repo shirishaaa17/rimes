@@ -1226,7 +1226,8 @@ left:45%;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
+    display:none;
 }
 #contact.animate {
     opacity: 1;
