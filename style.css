@@ -1217,15 +1217,15 @@ left:45%;
     position: absolute;
     bottom: -22.7px;
     left: 82%;
-    width: 24px;  /* Start as a circle */
-    height: 24px;
+    width: 48px;  /* Start as a circle */
+    height: 48px;
     background-color: #E58325;  /* Orange color */
     border-radius: 50%;  /* Circular shape */
     border: none;
     opacity: 0;  /* Initially hidden */
     transition: all 0.5s ease-in-out;  /* Smooth animation for width, height, and opacity */
     text-align: center;
-    color: transparent;  /* Hide text initially */
+    color: #E58325; /* Hide text initially */
     font-size: 16px;
     line-height: 44.66px;  /* To vertically center text after expansion */
 }
@@ -1234,7 +1234,7 @@ left:45%;
     width: 182px;  /* Expand to button size */
     height: 44.66px;  /* Button height */
     border-radius: 25px;  /* Rounded button corners */
-    color: white;  /* Show text */
+    color: black;  /* Show text */
     opacity: 1;  /* Make button visible */
 }
 
