@@ -1211,25 +1211,29 @@ left:45%;
     font-size: 12px;
     text-align: center;
 }
-#contact{
-    position:absolute;
-    overflow-y: hidden;
-    bottom:-22.7px;
-    left:82%;
-    width: 182px;
-    height: 44.66px;
-    border-radius: 25px;
-    text-align: center;
-}
-
 #contact {
-    opacity: 0;
-    transition: opacity 1s ease;
+    position: absolute;
+    overflow-y: hidden;
+    bottom: -22.7px;
+    left: 82%;
+    width: 24px; 
+    height: 24px;
+    border-radius: 50%; 
+    background-color: #E58325;
+    text-align: center;
+    opacity: 0; 
+    transition: all 0.8s ease-in-out, opacity 0.5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
-
 #contact.animate {
-    animation-delay: 3sec ease-out;
     opacity: 1;
+    width: 182px; 
+    height: 44.66px; 
+    border-radius: 25px; 
+    left: 82%; 
 }
 .footer-section{
     display: flex;
