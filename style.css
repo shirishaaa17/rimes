@@ -1224,13 +1224,14 @@ left:45%;
     border: none;
     opacity: 0;  /* Initially hidden */
     transition: all 0.5s ease-in-out;  /* Smooth animation for width, height, and opacity */
-
+    text-visible:none;
     color: transparent; /* Hide text initially */
     font-size: 16px;
     line-height: 44.66px;  /* To vertically center text after expansion */
 }
 
 #contact.animate {
+    opacity:1;
     width: 182px;  /* Expand to button size */
     height: 44.66px;  /* Button height */
     border-radius: 25px;  /* Rounded button corners */
