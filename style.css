@@ -1235,11 +1235,13 @@ left:45%;
     width: 182px;  /* Expand to button size */
     height: 44.66px;  /* Button height */
     border-radius: 25px;  /* Rounded button corners */
+    animation-delay:-2sec;
     transition: width 0.5s ease-in-out, height 0.5s ease-in-out, opacity 1s ease-in-out;
 }
 #contact.animate.show-text {
     color: black;  /* Show text */
-    text-align: center;
+    position:absolute;
+    top:50%;
     transition: color 0.5s ease;  /* Smooth transition for the text */
 }
 
