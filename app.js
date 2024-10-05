@@ -5,21 +5,30 @@ document.addEventListener("DOMContentLoaded", function() {
     let options = {
         root: null, 
         rootMargin: "0px",
-        threshold: 0.1 
+        threshold: 0.1
     };
 
     let observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add("animate");
-
+                // Add the animate class for the bounce
                 if (entry.target === bounceElement) {
-                    setTimeout(() => {
-                        contactButton.classList.add("animate");
-                    }, 3000);
+                    entry.target.classList.add("animate");
                 }
+                
+                // Delay the contact button animation by 2 seconds after bounce
+                if (entry.target === contactButton) {
+                    setTimeout(() => {
+                        entry.target.classList.add("animate");
 
-                observer.unobserve(entry.target);
+                        // Add text only after the button has expanded (after 0.5s)
+                        setTimeout(() => {
+                            entry.target.classList.add("show-text");
+                        }, 500); // 500ms to wait for the button expansion
+                    }, 3000);  // 2-second delay after the bounce animation
+                }
+                
+                observer.unobserve(entry.target); 
             }
         });
     }, options);
@@ -27,3 +36,4 @@ document.addEventListener("DOMContentLoaded", function() {
     observer.observe(bounceElement);
     observer.observe(contactButton);
 });
+
