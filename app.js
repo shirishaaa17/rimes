@@ -12,6 +12,13 @@ document.addEventListener("DOMContentLoaded", function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add("animate");
+
+                if (entry.target === bounceElement) {
+                    setTimeout(() => {
+                        contactButton.classList.add("animate");
+                    }, 3000);
+                }
+
                 observer.unobserve(entry.target);
             }
         });
